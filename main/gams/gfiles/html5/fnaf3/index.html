@@ -1,0 +1,15 @@
+<script>
+function inFrame () {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+}
+
+if(inFrame() == true) {
+window.location.replace("https://scratch.mit.edu/projects/372752954/embed");
+} else {
+window.location.replace("/g" + window.location.pathname.substring(5));
+}
+</script>

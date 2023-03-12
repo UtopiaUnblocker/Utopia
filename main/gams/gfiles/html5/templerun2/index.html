@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+</style>
+<script>
+function inFrame () {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+}
+
+if(!inFrame()) {
+  window.location.replace("/g" + window.location.pathname.substring(5));
+}
+</script>
+</head>
+  <iframe src="https://games.engineering.com/temple-run-2/index.html" width="100%" height="100%" style="width:100vw;height:100vh" frameborder="0"></iframe>
+</html>

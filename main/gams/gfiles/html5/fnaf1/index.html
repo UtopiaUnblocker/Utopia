@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Five Nights At Freddy's</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/FNAF1WebGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body allowfullscreen="false" onclick="document.exitFullscreen()">
+    <div class="webgl-content" allowfullscreen="false">
+      <div id="gameContainer" allowfullscreen="false" style="width: 1280px; height: 720px;"></div>
+    </div>
+  </body>
+</html><script defer src="htmlgame.js" type="text/javascript"></script>

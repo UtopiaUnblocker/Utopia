@@ -1,0 +1,246 @@
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.navbar {
+  display: flex; /* flex nav */
+  background-color: rgb(40, 40, 40); /* bkg color */
+  position: relative; /* content fits */
+  justify-content: space-between; /* text at left and right */
+  align-items: center; /* vertical centering */
+  /*height: 55px; /* sets height */
+  /*height: 58px;*/
+  height: 60px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar .title {
+  transition-duration: 0.2s;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+  display: block;
+  /*color: rgb(110,140,150);*/
+  color: rgb(90,120,130);
+  margin: 15px;
+  margin-left: 5vw;
+}
+
+.navbar .title img {
+  height: 20px;
+  transform: scale(1.8);
+  margin-right: 10px;
+}
+
+.navbar .title:hover {
+  opacity: 0.8;
+}
+
+.navbar .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar .pages {
+  float: right;
+  font-size: 1.05rem;
+  margin-right: 10px;
+}
+
+.navbar .pages ul {
+  display: flex; /* horizontal align */
+  margin-right: 2vw;
+  align-items: center;
+}
+
+.navbar .pages li {
+  list-style: none;
+  display: block; /* hide dots */
+  margin: 20px;
+}
+
+.navbar .pages a, .navbar .pages span {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  list-style: none;
+
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+.navbar .pages #pageHover:hover {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(250, 250, 250, 0.7);
+}
+
+.navbar .pages .terms {
+  color: rgb(170,170,170);
+}
+
+.navbar .pages .terms:hover {
+  color: rgb(200,200,200) !important;
+  text-shadow: 2px 2px 5px rgb(195, 195, 195) !important;
+}
+
+.navbar .pages .navBtn {
+  cursor: pointer;
+  color: rgb(160,190,200);
+}
+
+.navbar .pages .navBtn:hover {
+  cursor: pointer;
+  color: rgb(190,220,230) !important;
+  text-shadow: 2px 2px 5px rgb(185, 215, 225) !important;
+}
+
+.disc {
+  color: rgb(145,170,185) !important;
+}
+
+.disc:hover {
+  color: rgb(160,185,200) !important;
+  text-shadow: 2px 2px 5px rgb(160,185,200, 0.7) !important;
+}
+
+.navbar .material-symbols-outlined {
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.dropdown-links {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  background-color: rgb(45, 45, 45);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-links a {
+  text-align: center;
+  color: rgb(170, 170, 170) !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-links a:hover {
+  color: rgb(215, 215, 215) !important;
+  background-color: rgb(65, 65, 65);
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes dropdownFadeOut {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+  to {
+    margin-top: -10%;
+    opacity: 0;
+  }
+}
+
+.navbar .hamburger {
+  display: none;
+  position: absolute;
+  color: white;
+  right: 20px;
+  transform: scale(1.5);
+  cursor: pointer;
+  justify-content: space-between;
+
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+}
+
+.navbar .hamburger:hover {
+  color: rgb(225, 225, 225);
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) { /* 700px */
+  .navbar .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .navbar .pages {
+    display: flex;
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .pages ul {
+    width: 100vw;
+    flex-direction: column;
+    background-color: gray;
+  }
+
+  .pages ul li {
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  .pages ul li a {
+    display: none;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  /* overwrite hover animation */
+  .navbar .pages #pageHover:hover {
+    /* remove animation */
+    color: rgb(220, 220, 220);
+    text-shadow: none !important;
+    /* new animation */
+    background-color: rgb(115, 115, 115);
+  }
+  
+}

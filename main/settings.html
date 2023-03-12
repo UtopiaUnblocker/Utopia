@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="An educational website full of school topics and academic resources. The perfect place for students to learn.">
+  <meta name="keywords" content="math, science, ela, social studies, school, study">
+  <meta name="language" content="English">
+  <meta name="author" content="Utopia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utopia">
+  <meta property="og:description" content="An educational website full of school topics and academic resources. The perfect place for students to learn.">
+  <meta property="og:image" content="/favicon.ico">
+  <title>Utopia - Settings</title>
+  <script async src="https://arc.io/widget.min.js#r3Hj6Ygj"></script>
+  <script src="https://kit.fontawesome.com/983251336b.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/nav.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="/js/all.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0VC48YMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RD0VC48YMW');
+  </script>
+</head>
+<body>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <navbar class="navbar">
+    <div class="title"><a href="/main.html">
+      <img src="img/logo.png">&nbsp;Utopia
+    </a></div>
+    <div class="pages">
+      <ul>
+        <li><a href="https://discord.gg/hFZC5cgsmq" target="_blank" class="disc" id="pageHover"><i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join our Discord!</a></li>
+        <li><a href="/gams/" id="pageHover"><span class="material-symbols-outlined">stadia_controller</span>&nbsp;Games</a></li>
+        <li><a href="#" id="pageHover"><span class="material-symbols-outlined">settings</span>&nbsp;Settings</a></li>
+        <!--<li><a href="/books.html" id="pageHover"><span class="material-symbols-outlined" style="margin-top:-4px;">star</span>&nbsp;Book‍mar‍kl‍ets</a></li>-->
+        <div class="dropdown">
+          <li><a href="#" class="quick_links" id="pageHover"><span class="material-symbols-outlined">expand_more</span>Quick Links</a></li>
+          <div class="dropdown-links">
+            <a href="/settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>
+          </div>
+        </div>
+      </ul>
+      <span class="hamburger">
+        <span class="material-icons" id="menuBtn">menu</span>
+      </span>
+    </div>
+  </navbar>
+  <script src="/js/ub/nav.js"></script>
+  
+  <div class="horizon-center">
+    <div id="mainContent">
+        <span class="title" style="color:rgb(65,95,105)">Settings</span><br>
+        <div class="settings">
+          <div class="setting">
+            <p id="name">Hidden Mode</p>
+            <p>Prevents extensions from seeing what you do. Hides everything you do here from your history when searching.</p>
+            <p id="openBlank"><span class="material-symbols-outlined">open_in_new</span>&nbsp;Open in about:blank</p>
+            <input type="checkbox" id="ab_cloak" checked/><label for="ab_cloak"></label>
+            <p id="saved">Saved!</p>
+          </div>
+          <div class="setting">
+            <p id="name" style="top: 7px;">Tab Cloak</p>
+            <p style="top:calc(25%);transform:none;font-size:14px;">Disguises the tab as something else when you click off of it.</p>
+            <span id="details">
+              <p style="font-weight: bold;padding-bottom: 3px;">Presets:</p>
+              <img class="tab" id="Google" src="/img/google.png" width="32" draggable="false">
+              <img class="tab" id="Classes" src="/img/classroom.png" width="32" draggable="false">
+              <img class="tab" id="My_Drive_-_Google_Drive" src="/img/drive.png" width="32" draggable="false">
+              <img class="tab" id="Gmail" src="/img/gmail.png" width="32" draggable="false">
+              <img class="tab" id="Dashboard_|_Khan_Academy" src="/img/khan.png" width="32" draggable="false">
+              <img class="tab" id="Home_|_Schoology" src="/img/schoology.png" width="32" draggable="false">
+              <img class="tab" id="Clever_|_Portal" src="/img/clever.png" width="32" draggable="false">
+              <br><p style="margin-top: 5px;"><span id="detailBtn">Custom Tab Cloak</span><span id="removeBtn"><img id="cancel" src="/img/cancel.png" width="10" style="margin-top:-2px;" draggable="false"> Remove Cloak</span></p>
+              <p style="font-size: 12px;margin-top: 5px;padding: 0 10px;"><span style="font-weight: bold;">Current Cloak:</span>&nbsp;&nbsp;<span style="text-decoration:underline">Icon:</span>&nbsp;&nbsp;<span id="cloakIcon">none</span>,&nbsp;&nbsp;<span style="text-decoration:underline">Title:</span>&nbsp;<span id="cloakTitle">none</span></p>
+            </span>
+          </div>
+          <div class="setting">
+            <p id="name">Quick Links</p>
+            <p>Turn this on to add links that can be accessed quickly via "Quick Links" in the navbar.</p>
+            <p class="quickies" style="margin-top:60px;display:none;"><span id="detailBtn" class="add">Add Quick Links</span>&nbsp;&nbsp;&nbsp;<span id="detailBtn" class="rm">Remove Quick Links</span></p>
+            <input type="checkbox" id="quick_links" checked/><label for="quick_links"></label>
+            <p id="saved">Saved!</p>
+          </div>
+          <div class="setting">
+            <p id="name">Automatic Hidden Mode</p>
+            <p style="margin-top:8px">Activates Hidden Mode immediately and opens in about:blank. Works best if popups aren't blocked.</p>
+            <input type="checkbox" id="auto_cloak"/><label for="auto_cloak"></label>
+            <p id="saved">Saved!</p>
+          </div>
+          <div class="setting">
+            <p id="name">Anti-Closing</p>
+            <p style="margin-top:8px">Prevents extensions (such as GoGuardian) from closing the tab by showing the "Leave Site?" popup.</p>
+            <input type="checkbox" id="anti_close"/><label for="anti_close"></label>
+            <p id="saved">Saved!</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <script src="/js/settings.js"></script>
+  
+  <div class="facts">
+    <h1>Schoolwork: ELA, Science, History, Math, Literature, Social Studies, and Writing</h1>
+    <h1>School has many educational resources where you can learn, study, and gain knowledge.</h1>
+    <h1>Research historical events. Analyze scientific experiments. Explain the historical importance. Solve with the quadratic formula. Find the theme of the literature. Learn about George Washington in social studies. Write an essay about educational degrees.</h1>
+  </div>
+</body>
+</html>

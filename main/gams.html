@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="An educational website full of school topics and academic resources. The perfect place for students to learn.">
+  <meta name="keywords" content="math, science, ela, social studies, school, study">
+  <meta name="language" content="English">
+  <meta name="author" content="Utopia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Utopia">
+  <meta property="og:description" content="An educational website full of school topics and academic resources. The perfect place for students to learn.">
+  <meta property="og:image" content="/favicon.ico">
+  <title>Utopia - Ga‍‍me‍‍‍‍s</title>
+  <script async src="https://arc.io/widget.min.js#r3Hj6Ygj"></script>
+  <script src="https://kit.fontawesome.com/983251336b.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/nav.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="/js/all.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0VC48YMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RD0VC48YMW');
+  </script>
+</head>
+  <body>
+    <navbar class="navbar">
+      <div class="title"><a href="/main.html">
+        <img src="img/logo.png">&nbsp;Utopia
+      </a></div>
+      <div class="pages">
+        <ul>
+          <li><span class="navBtn" onclick="goFullscreen()"><i class="fa-solid fa-expand"></i> ‍ Fullscreen Mode</span></li>
+          <li><a href="/gams/" id="pageHover"><span class="material-symbols-outlined">stadia_controller</span>&nbsp;Games</a></li>
+          <li><a href="/settings.html" id="pageHover"><span class="material-symbols-outlined">settings</span>&nbsp;Settings</a></li>
+          <!--<li><a href="/books.html" id="pageHover"><span class="material-symbols-outlined" style="margin-top:-4px;">star</span>&nbsp;Book‍mar‍kl‍ets</a></li>-->
+          <div class="dropdown">
+            <li><a href="#" class="quick_links" id="pageHover"><span class="material-symbols-outlined">expand_more</span>Quick Links</a></li>
+            <div class="dropdown-links">
+              <a href="/settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>
+            </div>
+          </div>
+        </ul>
+        <span class="hamburger">
+          <span class="material-icons" id="menuBtn">menu</span>
+        </span>
+      </div>
+    </navbar>
+    <script src="/js/ub/nav.js"></script>
+    
+    <iframe class="gam" src="/gams/" width="100%" style="user-select:none;display:block;" onload="setHeight()" frameborder="0">An error occured.</iframe>
+    <script src="/js/gams.js"></script>
+    <script>
+      var gam = document.querySelector(".gam");
+      
+      gam.style.setProperty('height', 'calc(100vh - 60px)');
+
+      function goFullscreen(){
+        document.querySelector("navbar").style.display = "none";
+        gam.style.height = "100%";
+        document.documentElement.requestFullscreen();
+        document.body.style.overflow = "none";
+      }
+
+      document.addEventListener("fullscreenchange", function() {
+        if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement && !document.fullscreen){
+          //exit fullscreen
+          document.querySelector("navbar").style.display = "flex";
+          gam.style.height = "calc(100% - 58px)";
+          document.body.style.overflow = "hidden";
+        }
+      });
+
+      
+    </script>
+  </body>
+</html>

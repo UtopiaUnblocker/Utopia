@@ -1,0 +1,13 @@
+{
+"companyName": "thatrs",
+"productName": "Five NIghts At Freddy's",
+"dataUrl": "FNAF1WebGL.data.unityweb",
+"asmCodeUrl": "FNAF1WebGL.asm.code.unityweb",
+"asmMemoryUrl": "FNAF1WebGL.asm.memory.unityweb",
+"asmFrameworkUrl": "FNAF1WebGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 1073741824,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

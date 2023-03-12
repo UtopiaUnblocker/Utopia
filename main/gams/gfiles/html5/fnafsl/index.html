@@ -1,0 +1,15 @@
+<script>
+function inFrame () {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+}
+
+if(inFrame() == true) {
+window.location.replace("https://7c6cdec5-e531-4723-b913-a854a2b38715.id.repl.co/app.html?id=268126656&turbo=false&full-screen=true");
+} else {
+window.location.replace("/g" + window.location.pathname.substring(5));
+}
+</script>

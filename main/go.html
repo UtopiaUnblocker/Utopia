@@ -1,0 +1,29 @@
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0VC48YMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RD0VC48YMW');
+  </script>
+</head>
+
+<body>
+<script src="uv/uv.bundle.js"></script>
+<script src="uv/uv.config.js"></script>
+<script>
+function encodeUrl(str){
+  if (!str) return str;
+  return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
+}
+
+window.navigator.serviceWorker.register('./sw.js', {
+    scope: /*__uv$config.prefix*/'/service/'
+}).then(() => {
+    console.log("Service worker (for Quick Link) registered.");
+});
+
+</script>
+
+</body>
