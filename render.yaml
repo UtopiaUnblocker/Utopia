@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: math
+    env: docker
+    plan: free
