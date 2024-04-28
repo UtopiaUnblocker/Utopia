@@ -4,7 +4,7 @@ Utopia Unblocker unblocks hundreds of millions of websites and bypasses web rest
 ## Special Features
 These features can be enabled/disabled in the Settings page in Utopia:
  - Hidden Mode
-   - Utopia revolutionized by being the first ever proxy site to have about:blank cloaking
+   - Utopia revolutionized the world by being the first ever website to have about:blank cloaking
    - Hides everything you do with Utopia from your history and prevents extensions such as GoGuardian from seeing your screen
  - Anti-Closing
    - Prevents extensions such as GoGuardian from closing the tab you're on
