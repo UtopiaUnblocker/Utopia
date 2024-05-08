@@ -1,7 +1,7 @@
 import createServer from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const bare =  createServer('/bare/');
 const serve = new nodeStatic.Server('main/');
