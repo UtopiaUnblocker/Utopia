@@ -1,6 +1,8 @@
 # Utopia
 Utopia Unblocker unblocks hundreds of millions of websites and bypasses web restrictions with ease.
 
+The most revolutionary proxy service out there, adding unprecendented technology and algorithms to circumvent blocks.
+
 ## Special Features
 These features can be enabled/disabled in the Settings page in Utopia:
  - Hidden Mode
